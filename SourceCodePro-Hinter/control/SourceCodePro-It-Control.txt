@@ -1,0 +1,31 @@
+# Percent
+percent touch 24 y 0.5 @ 13
+percent touch 30 y -0.25 @ 13
+
+# Number Sign
+numbersign touch 2,3,5,6,9,10,21,22,25,26,29,30 y 0.25 @ 15,16,17,18
+numbersign touch 2,3,5,6,9,10,21,22,25,26,29,30 y 0.5 @ 19,20,21
+numbersign touch 0,1,7,8,23,24 y -0.25 @ 19,20,21
+
+# Plus
+plus touch 5,6 y 1 @ 13,14,17,18,21
+plus touch 1,2,9,10 y 0.25 @ 15,16,17,18,19,20,21
+plus touch 3,4,7,8 y -0.25 @ 19,20,21
+
+# Minus/Hyphen
+hyphen touch 0,3 y 0.25 @ 15,16,17,18,19,20,21
+hyphen touch 1,2 y -0.25 @ 19,20,21
+
+# Equal
+equal touch 0,3,4,7 y 0.25 @ 15,16,17,18,19,20
+equal touch 1,2,5,6 y -0.25 @ 19,20
+
+# Slash
+slash touch 0,3 y 0.5 @ 9,10,11,12,17,18,19,20
+
+# Backslash
+backslash touch 0,3 y 0.5 @ 9,10,11,12,17,18,19,20
+
+# Underscore
+underscore touch 0,3 y 0.25 @ 15,16,17,18,19,20,21
+underscore touch 1,2 y -0.25 @ 19,20,21
