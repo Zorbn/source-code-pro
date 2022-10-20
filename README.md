@@ -1,3 +1,9 @@
+# This fork
+
+This fork modifies the shape of some characters to improve rendering, especially at smaller sizes. These changes go beyond what hinting alone can provide. After building this font, make sure to run it through my SourceCodePro-Hinter scripts, to get proper hinting.
+
+After modifications to any of the glyphs in the Instances folder, make sure to run `checkoutlinesUFO -e font.ufo` on the `font.ufo` file of the weight that was modified.
+
 # Source Code Pro
 
 [Source Code Pro](http://adobe-fonts.github.io/source-code-pro/)
