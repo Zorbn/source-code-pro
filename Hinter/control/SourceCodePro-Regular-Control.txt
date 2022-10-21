@@ -13,8 +13,8 @@ plus touch 1,2,9,10 y 0.25 @ 15,16,17,18,19,20,21
 plus touch 3,4,7,8 y -0.25 @ 19,20,21
 
 # Minus/Hyphen
-hyphen touch 0,3 y 0.25 @ 15,16,17,18,19,20,21
-hyphen touch 1,2 y -0.25 @ 19,20,21
+minus touch 0,3 y 0.25 @ 15,16,17,18,19,20,21
+minus touch 1,2 y -0.25 @ 19,20,21
 
 # Equal
 equal touch 0,3,4,7 y 0.25 @ 15,16,17,18,19,20,21
