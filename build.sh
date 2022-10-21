@@ -13,6 +13,7 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
 rm -rf $DIR/target/
 otf_dir="$DIR/target/OTF"
 ttf_dir="$DIR/target/TTF"
+hint_dir="$DIR/Hinter"
 mkdir -p $otf_dir $ttf_dir
 
 
@@ -34,7 +35,10 @@ function build_font {
 
     # move font files to target directory
     mv $font_dir/$ps_name.otf $otf_dir
-    mv $font_dir/$ps_name.ttf $ttf_dir
+    mv $font_dir/$ps_name.ttf "$hint_dir/in"
+	cd $hint_dir
+	python hint.py $ttf_dir
+	rm "$hint_dir\$ps_name.ttf"
     echo "Done with $ps_name"
     echo ""
     echo ""

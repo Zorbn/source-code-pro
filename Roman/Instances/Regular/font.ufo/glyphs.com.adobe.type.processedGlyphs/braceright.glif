@@ -4,42 +4,88 @@
   <unicode hex="007D"/>
   <outline>
     <contour>
-      <point x="99" y="-152" type="line"/>
-      <point x="160" y="-152" type="line" smooth="yes"/>
+      <point x="99" y="-152" type="line" name="hintSet0000"/>
+      <point x="160" y="-152" type="line"/>
       <point x="285" y="-152"/>
       <point x="335" y="-122"/>
-      <point x="335" y="-19" type="curve" smooth="yes"/>
-      <point x="335" y="174" type="line" smooth="yes"/>
+      <point x="335" y="-19" type="curve"/>
+      <point x="335" y="174" type="line"/>
       <point x="335" y="213"/>
       <point x="362" y="251"/>
       <point x="480" y="252" type="curve"/>
-      <point x="480" y="304" type="line"/>
-      <point x="362" y="305"/>
+      <point x="480" y="304" type="line" name="hintSet0005"/>
+      <point x="362" y="305" name="hintSet0006"/>
       <point x="335" y="343"/>
-      <point x="335" y="382" type="curve" smooth="yes"/>
-      <point x="335" y="575" type="line" smooth="yes"/>
+      <point x="335" y="382" type="curve"/>
+      <point x="335" y="575" type="line"/>
       <point x="335" y="678"/>
       <point x="285" y="708"/>
-      <point x="160" y="708" type="curve" smooth="yes"/>
+      <point x="160" y="708" type="curve"/>
       <point x="99" y="708" type="line"/>
       <point x="99" y="661" type="line"/>
-      <point x="150" y="661" type="line" smooth="yes"/>
+      <point x="150" y="661" type="line"/>
       <point x="252" y="661"/>
       <point x="269" y="635"/>
-      <point x="269" y="570" type="curve" smooth="yes"/>
-      <point x="269" y="389" type="line" smooth="yes"/>
+      <point x="269" y="570" type="curve"/>
+      <point x="269" y="389" type="line"/>
       <point x="269" y="324"/>
       <point x="290" y="292"/>
       <point x="359" y="280" type="curve"/>
       <point x="359" y="276" type="line"/>
       <point x="290" y="264"/>
       <point x="269" y="232"/>
-      <point x="269" y="167" type="curve" smooth="yes"/>
-      <point x="269" y="-14" type="line" smooth="yes"/>
+      <point x="269" y="167" type="curve"/>
+      <point x="269" y="-14" type="line"/>
       <point x="269" y="-79"/>
       <point x="252" y="-105"/>
-      <point x="150" y="-105" type="curve" smooth="yes"/>
+      <point x="150" y="-105" type="curve"/>
       <point x="99" y="-105" type="line"/>
     </contour>
   </outline>
+  <lib>
+    <dict>
+      <key>com.adobe.type.autohint.v2</key>
+      <dict>
+        <key>hintSetList</key>
+        <array>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0000</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -152 47</string>
+              <string>hstem 252 52</string>
+              <string>hstem 661 47</string>
+              <string>vstem 269 66</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0005</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -152 47</string>
+              <string>hstem 252 52</string>
+              <string>hstem 661 47</string>
+              <string>vstem 269 66</string>
+              <string>vstem 359 121</string>
+            </array>
+          </dict>
+          <dict>
+            <key>pointTag</key>
+            <string>hintSet0006</string>
+            <key>stems</key>
+            <array>
+              <string>hstem -152 47</string>
+              <string>hstem 252 52</string>
+              <string>hstem 661 47</string>
+              <string>vstem 269 66</string>
+            </array>
+          </dict>
+        </array>
+        <key>id</key>
+        <string>2acf5b6c0d08ba84ed07229fc355cb3f342d6dee50d44830077270dd11042c9e8417d2037a153d3a7c543d9543e239a6ad1c060eecc69f384dd12284ac0e5876</string>
+      </dict>
+    </dict>
+  </lib>
 </glyph>

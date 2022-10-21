@@ -11,6 +11,7 @@ if "%MAKEOTF_PATH%" == "" goto error_makeotf_not_found
 
 call :GetDirectoryName PYTHON_PATH "%MAKEOTF_PATH%"
 
+set HINTING_PATH=%~dp0\Hinter\in
 set TARGET_PATH=%~dp0\target\
 set TARGET_OTF_PATH=%TARGET_PATH%OTF\
 set TARGET_TTF_PATH=%TARGET_PATH%TTF\
@@ -42,8 +43,14 @@ goto :eof
 :: %1 - Roman/Italic
 :: %2 - Weight
 :build_font
-call makeotf -f "%~dp0\%1\Instances\%2\font.ufo" -r -o "%TARGET_OTF_PATH%\%FAMILY%-%2.otf"
-call makeotf -f "%~dp0\%1\Instances\%2\font.ttf" -r -o "%TARGET_TTF_PATH%\%FAMILY%-%2.ttf" -ff "%~dp0\%1\Instances\%2\font.ufo\features.fea"
+call cd "%~dp0\%1\Instances\%2"
+call makeotf -f "%~dp0\%1\Instances\%2\font.ufo" -r -gs -omitMacNames -o "%TARGET_OTF_PATH%\%FAMILY%-%2.otf"
+call otf2ttf -o "%FAMILY%-%2.ttf" "%TARGET_OTF_PATH%\%FAMILY%-%2.otf"
+call ttfcomponentizer "%FAMILY%-%2.ttf"
+call move "%FAMILY%-%2.ttf" "%HINTING_PATH%"
+call cd "%~dp0\Hinter"
+call python hint.py %TARGET_TTF_PATH%
+call del "%HINTING_PATH%\%FAMILY%-%2.ttf"
 goto :eof
 
 :error_makeotf_not_found

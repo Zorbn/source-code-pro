@@ -1,8 +1,8 @@
 # This fork
 
-This fork modifies the shape of some characters to improve rendering, especially at smaller sizes. These changes go beyond what hinting alone can provide. After building this font, make sure to run it through my SourceCodePro-Hinter scripts, to get proper hinting.
+This fork modifies the shape of some characters to improve rendering, especially at smaller sizes. These changes go beyond what hinting alone can provide. Building the ttf fonts using the `build` scripts automatically hint them. If you build the font manually, make sure to run it through the Hinter scripts, to get proper hinting.
 
-After modifications to any of the glyphs in the Instances folder, make sure to run `checkoutlinesUFO -e font.ufo` on the `font.ufo` file of the weight that was modified.
+After modifications to any of the glyphs in the Instances folder, make sure to run `checkoutlinesUFO -e font.ufo` and `psautohint font.ufo` on the `font.ufo` file of the weight that was modified.
 
 # Source Code Pro
 
@@ -24,6 +24,7 @@ in user interface (UI) environments.
 ### Requirements
 
 To build the binary font files from source, you need Python 3 along with the
+[TTFAutoHint](http://freetype.org/ttfautohint/) which needs to be placed in the Hinter directory of this repo,
 [Adobe Font Development Kit for OpenType](https://github.com/adobe-type-tools/afdko/) (AFDKO) and
 [FontTools](https://github.com/fonttools/fonttools) packages, which you can install with
 

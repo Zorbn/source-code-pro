@@ -1,13 +1,14 @@
 import subprocess
 import os
+import sys
 from os.path import isfile, join, splitext
 
 in_path = "in"
-out_path = "out"
+out_path = sys.argv[1]
 control_path = "control"
-out_suffix = "-Hinted"
+out_suffix = ""
 control_suffix = "-Control"
-cmd = ["./ttfautohint.exe"]
+cmd = ["./ttfautohint"]
 
 def main():
     for i in os.listdir(in_path):
